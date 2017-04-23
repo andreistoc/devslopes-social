@@ -22,13 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJk-UQ-ISz" customClass="FancyView" customModule="devslopes_social" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
-                                <color key="backgroundColor" red="0.0" green="0.36078431372549019" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="0lT-5F-fow"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZS-Jm-s5c">
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <subviews>
@@ -49,7 +42,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zab-al-1n0">
-                                <rect key="frame" x="16" y="28" width="288" height="20"/>
+                                <rect key="frame" x="16" y="45" width="288" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="9S5-rb-XlR"/>
                                 </constraints>
@@ -58,16 +51,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKn-RR-X7z" customClass="RoundedButton" customModule="devslopes_social" customModuleProvider="target">
-                                <rect key="frame" x="122.5" y="68" width="75" height="75"/>
+                                <rect key="frame" x="122.5" y="85" width="75" height="75"/>
                                 <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="J9w-K1-V0z"/>
                                     <constraint firstAttribute="height" constant="75" id="oEI-ox-HEk"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wFX-QF-bOh"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZ9-Ra-bB0" customClass="FancyField" customModule="devslopes_social" customModuleProvider="target">
-                                <rect key="frame" x="35" y="163" width="250" height="24"/>
+                                <rect key="frame" x="35" y="180" width="250" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="nUL-Kr-zaA"/>
                                 </constraints>
@@ -76,7 +72,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uMP-Al-7KM" customClass="FancyField" customModule="devslopes_social" customModuleProvider="target">
-                                <rect key="frame" x="35" y="207" width="250" height="24"/>
+                                <rect key="frame" x="35" y="224" width="250" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="iU7-PA-Q6T"/>
                                 </constraints>
@@ -85,7 +81,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdE-vC-Gml" customClass="FancyBtn" customModule="devslopes_social" customModuleProvider="target">
-                                <rect key="frame" x="110" y="251" width="100" height="30"/>
+                                <rect key="frame" x="110" y="268" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.36078431372549019" blue="0.69803921568627447" alpha="0.87486622431506844" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="gaH-uu-CcG"/>
@@ -103,18 +99,15 @@
                             <constraint firstItem="qKn-RR-X7z" firstAttribute="top" secondItem="zab-al-1n0" secondAttribute="bottom" constant="20" id="8f2-Ym-ZcP"/>
                             <constraint firstItem="aZ9-Ra-bB0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JaO-oS-udk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yZS-Jm-s5c" secondAttribute="bottom" id="MWK-Pe-OJb"/>
-                            <constraint firstAttribute="trailing" secondItem="IJk-UQ-ISz" secondAttribute="trailing" id="QPa-LA-1DV"/>
                             <constraint firstItem="zab-al-1n0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Typ-2I-P6Q"/>
-                            <constraint firstItem="IJk-UQ-ISz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Whm-ih-Zki"/>
-                            <constraint firstItem="zab-al-1n0" firstAttribute="top" secondItem="IJk-UQ-ISz" secondAttribute="bottom" constant="8" id="WjT-7f-PHV"/>
                             <constraint firstItem="qKn-RR-X7z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YYG-HI-F7K"/>
                             <constraint firstItem="uMP-Al-7KM" firstAttribute="top" secondItem="aZ9-Ra-bB0" secondAttribute="bottom" constant="20" id="deI-iN-kyI"/>
-                            <constraint firstItem="IJk-UQ-ISz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dwX-Dc-cgo"/>
                             <constraint firstItem="VdE-vC-Gml" firstAttribute="top" secondItem="uMP-Al-7KM" secondAttribute="bottom" constant="20" id="e7T-E1-nBG"/>
                             <constraint firstItem="uMP-Al-7KM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gyg-ln-Kvv"/>
                             <constraint firstItem="yZS-Jm-s5c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j6e-BC-twI"/>
                             <constraint firstAttribute="trailing" secondItem="yZS-Jm-s5c" secondAttribute="trailing" id="rcG-wv-q3s"/>
                             <constraint firstItem="zab-al-1n0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tOX-6E-S8I"/>
+                            <constraint firstItem="zab-al-1n0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="wWX-GP-SQf"/>
                             <constraint firstItem="aZ9-Ra-bB0" firstAttribute="top" secondItem="qKn-RR-X7z" secondAttribute="bottom" constant="20" id="zQF-sk-9Sf"/>
                         </constraints>
                     </view>

@@ -36,6 +36,7 @@
 		4907C9241EACAF29008E6BB9 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		4907C9261EACB176008E6BB9 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		4907C9281EACB4E3008E6BB9 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		4907C92A1EACE285008E6BB9 /* devslopes-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "devslopes-social.entitlements"; sourceTree = "<group>"; };
 		7469014CC29F1F21886385A6 /* Pods-devslopes-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-social/Pods-devslopes-social.release.xcconfig"; sourceTree = "<group>"; };
 		EF7262008BB11C0E99D798DF /* Pods-devslopes-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-social/Pods-devslopes-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +82,7 @@
 		4907C9071EABAA9D008E6BB9 /* devslopes-social */ = {
 			isa = PBXGroup;
 			children = (
+				4907C92A1EACE285008E6BB9 /* devslopes-social.entitlements */,
 				4907C9211EACAB3C008E6BB9 /* Util */,
 				4907C91C1EAC8EF9008E6BB9 /* Model */,
 				4907C91D1EAC8EFE008E6BB9 /* View */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = PA3CQKBV4P;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
