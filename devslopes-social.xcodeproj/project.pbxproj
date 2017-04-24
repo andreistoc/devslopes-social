@@ -18,6 +18,7 @@
 		4907C9251EACAF29008E6BB9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907C9241EACAF29008E6BB9 /* RoundedButton.swift */; };
 		4907C9271EACB176008E6BB9 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907C9261EACB176008E6BB9 /* FancyField.swift */; };
 		4907C9291EACB4E3008E6BB9 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907C9281EACB4E3008E6BB9 /* FancyBtn.swift */; };
+		490802BF1EADFBE100C9DB8E /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490802BE1EADFBE100C9DB8E /* FeedVC.swift */; };
 		DA627C3918A7686414B13127 /* Pods_devslopes_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280766BCE4B34F6DA140F0EE /* Pods_devslopes_social.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		4907C9261EACB176008E6BB9 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		4907C9281EACB4E3008E6BB9 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		4907C92A1EACE285008E6BB9 /* devslopes-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "devslopes-social.entitlements"; sourceTree = "<group>"; };
+		490802BE1EADFBE100C9DB8E /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		7469014CC29F1F21886385A6 /* Pods-devslopes-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-social/Pods-devslopes-social.release.xcconfig"; sourceTree = "<group>"; };
 		EF7262008BB11C0E99D798DF /* Pods-devslopes-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-social/Pods-devslopes-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				4907C90A1EABAA9D008E6BB9 /* SignInVC.swift */,
+				490802BE1EADFBE100C9DB8E /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				4907C90B1EABAA9D008E6BB9 /* SignInVC.swift in Sources */,
 				4907C9251EACAF29008E6BB9 /* RoundedButton.swift in Sources */,
 				4907C9091EABAA9D008E6BB9 /* AppDelegate.swift in Sources */,
+				490802BF1EADFBE100C9DB8E /* FeedVC.swift in Sources */,
 				4907C9201EACAAB9008E6BB9 /* FancyView.swift in Sources */,
 				4907C9231EACAB56008E6BB9 /* Constants.swift in Sources */,
 				4907C9291EACB4E3008E6BB9 /* FancyBtn.swift in Sources */,

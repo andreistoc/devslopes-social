@@ -96,7 +96,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VdE-vC-Gml" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8cy-pL-y2M"/>
                             <constraint firstItem="qKn-RR-X7z" firstAttribute="top" secondItem="zab-al-1n0" secondAttribute="bottom" constant="20" id="8f2-Ym-ZcP"/>
@@ -117,11 +117,48 @@
                     <connections>
                         <outlet property="emailField" destination="aZ9-Ra-bB0" id="97K-Xz-m8F"/>
                         <outlet property="pwdField" destination="uMP-Al-7KM" id="44q-1h-3NE"/>
+                        <segue destination="iVo-1l-QI4" kind="show" identifier="goToFeed" id="KX9-iX-Z9h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="204.375" y="172.5"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="F8g-WR-E2p">
+            <objects>
+                <viewController id="iVo-1l-QI4" customClass="FeedVC" customModule="devslopes_social" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oqH-oJ-cGI"/>
+                        <viewControllerLayoutGuide type="bottom" id="4sn-Tq-cvt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9jK-QI-Ku9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKC-at-gmT">
+                                <rect key="frame" x="130" y="269" width="60" height="30"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="iVo-1l-QI4" eventType="touchUpInside" id="60S-oH-xo1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SKC-at-gmT" firstAttribute="centerX" secondItem="9jK-QI-Ku9" secondAttribute="centerX" id="M2T-db-jOY"/>
+                            <constraint firstItem="SKC-at-gmT" firstAttribute="centerY" secondItem="9jK-QI-Ku9" secondAttribute="centerY" id="V4C-8i-Mtd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="gNg-xu-1bL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ibY-qp-kTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.875" y="171.12676056338029"/>
         </scene>
     </scenes>
     <resources>
